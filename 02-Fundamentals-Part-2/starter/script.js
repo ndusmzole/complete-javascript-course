@@ -46,9 +46,7 @@
    }else if(avgKoalas>=avgDolphins*2){
       console.log("Koalas won!!", avgDolphins, avgKoalas);
    }else{
-      console.log("No winner!", avgDolphins, avgKoalas);
-
-      
+      console.log("No winner!", avgDolphins, avgKoalas);      
    }
  }
 
@@ -56,3 +54,40 @@
  const avgKoalas = calcAverage(4, 4, 4);
 
  checkWinner(avgDolphins,avgKoalas);
+
+ const f = ['sdd', 'sa', 'sdw', 'saeq'];
+ const newLength = f.push("adad");
+
+ console.log(newLength);
+ console.log(f.includes('sa'));
+
+ const ndu = {
+   firstName: "Ndu",
+   lastName: "Msomi",
+   birthYear:  1997,
+   calcAge: function(){
+      return 2037 - this.birthYear;
+   },
+   job: 'QA',
+
+
+   friends: ['name','nake', 'seda']
+ };
+
+ console.log(ndu.age);
+ console.log(ndu['age']);
+ ndu.age=26;
+ console.log(ndu.age);
+ ndu['age']=27;
+ console.log(ndu['age']);
+
+
+
+ //Challenge
+
+ console.log(`${ndu.firstName} has ${ndu.friends.length} friends, and his best friend is called ${ndu.friends[2]}` );
+
+ // Object methods call
+
+ console.log("Ndu's age: ", ndu.calcAge());
+ console.log("Ndu's age: ", ndu['calcAge']());
